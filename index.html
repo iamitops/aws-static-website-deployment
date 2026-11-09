@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A modern cloud and DevOps project showcase.">
+  <title>CloudLaunch | Cloud & DevOps</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home"><span class="brand-mark">C</span> CloudLaunch</a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <div class="nav-links">
+        <a href="#services">What we do</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#projects">Projects</a>
+        <a class="nav-cta" href="#contact">Let's connect <span>↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> CLOUD • AUTOMATION • DELIVERY</div>
+        <h1>Build faster.<br><span>Ship smarter.</span></h1>
+        <p class="hero-text">A practical cloud engineering showcase focused on reliable infrastructure, automated delivery, and simple digital experiences.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore projects <span>→</span></a>
+          <a class="button button-quiet" href="#workflow">See the workflow</a>
+        </div>
+        <div class="hero-proof">
+          <div class="proof-icon">☁</div>
+          <div><strong>Cloud-ready by design</strong><small>Static, lightweight and responsive</small></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Illustration of a cloud deployment workflow">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="cloud-card">
+          <div class="cloud-top"><span class="window-dots">● ● ●</span><span class="live"><i></i> SYSTEM ONLINE</span></div>
+          <div class="cloud-symbol">☁</div>
+          <div class="cloud-title">Deploy with confidence</div>
+          <div class="cloud-subtitle">From source code to global delivery</div>
+          <div class="pipeline">
+            <div class="pipeline-step"><b>01</b><span>Git</span></div><div class="pipeline-line"></div>
+            <div class="pipeline-step"><b>02</b><span>Build</span></div><div class="pipeline-line"></div>
+            <div class="pipeline-step"><b>03</b><span>Deploy</span></div>
+          </div>
+          <div class="terminal"><span>$</span> pipeline.status <em>→ success</em></div>
+        </div>
+        <div class="float-tag tag-top">AWS <strong>☁</strong></div>
+        <div class="float-tag tag-bottom"><strong>99.9%</strong><small>Availability goal</small></div>
+      </div>
+    </section>
+
+    <section class="metrics container" aria-label="Project principles">
+      <div><strong>01</strong><span>Automate repeatable work</span></div>
+      <div><strong>02</strong><span>Design for reliability</span></div>
+      <div><strong>03</strong><span>Deliver with confidence</span></div>
+      <div><strong>04</strong><span>Keep it observable</span></div>
+    </section>
+
+    <section class="section container" id="services">
+      <div class="section-heading">
+        <div class="eyebrow">CAPABILITIES</div>
+        <h2>Everything connected.<br><span>Nothing overcomplicated.</span></h2>
+        <p>Core practices that help teams move from a code change to a dependable release.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card"><div class="card-icon purple">⌘</div><h3>Cloud infrastructure</h3><p>Use managed cloud services to host applications with a focus on security, scalability, and cost awareness.</p><a href="#workflow">Explore approach <span>↗</span></a></article>
+        <article class="service-card"><div class="card-icon blue">⟳</div><h3>CI/CD automation</h3><p>Build a repeatable delivery process that validates source changes and deploys approved updates.</p><a href="#workflow">Explore approach <span>↗</span></a></article>
+        <article class="service-card"><div class="card-icon orange">◈</div><h3>Web experiences</h3><p>Create fast, responsive static websites with clean structure and a smooth user experience.</p><a href="#projects">Explore projects <span>↗</span></a></article>
+      </div>
+    </section>
+
+    <section class="workflow-section" id="workflow">
+      <div class="container workflow-layout">
+        <div class="section-heading">
+          <div class="eyebrow">DELIVERY WORKFLOW</div>
+          <h2>One commit.<br><span>A consistent release.</span></h2>
+          <p>This sample project is designed to fit an AWS static website delivery pipeline.</p>
+          <a class="button button-primary" href="#contact">Discuss the workflow <span>→</span></a>
+        </div>
+        <div class="workflow-list">
+          <div class="workflow-item"><div class="workflow-number">01</div><div><h3>Source control</h3><p>Push website code to a Git repository.</p><small>GIT REPOSITORY</small></div><span class="workflow-check">✓</span></div>
+          <div class="workflow-item"><div class="workflow-number">02</div><div><h3>Build and validate</h3><p>Run a CodeBuild job to validate and package the site.</p><small>AWS CODEBUILD</small></div><span class="workflow-check">✓</span></div>
+          <div class="workflow-item"><div class="workflow-number">03</div><div><h3>Pipeline orchestration</h3><p>Coordinate source, build, and deployment stages.</p><small>AWS CODEPIPELINE</small></div><span class="workflow-check">✓</span></div>
+          <div class="workflow-item"><div class="workflow-number">04</div><div><h3>Host and distribute</h3><p>Store static assets in S3 and deliver them through CloudFront.</p><small>AMAZON S3 + CLOUDFRONT</small></div><span class="workflow-check">✓</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="projects">
+      <div class="section-heading section-heading-row">
+        <div><div class="eyebrow">SELECTED WORK</div><h2>Built to be <span>practical.</span></h2></div>
+        <p>A starter showcase that can grow as new cloud and automation projects are completed.</p>
+      </div>
+      <div class="project-card">
+        <div class="project-art">
+          <div class="mini-browser"><div class="mini-browser-bar">● ● ● <span>cloudlaunch.example</span></div><div class="mini-browser-body"><div class="mini-line wide"></div><div class="mini-line"></div><div class="mini-blocks"><i></i><i></i><i></i></div></div></div>
+        </div>
+        <div class="project-info"><div class="project-label">01 / STATIC WEBSITE</div><h3>AWS static website deployment</h3><p>A responsive frontend hosted on Amazon S3 and distributed globally with CloudFront. The repository can be connected to a CI/CD pipeline for automated releases.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>AWS S3</span><span>CloudFront</span></div></div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-inner"><div><div class="eyebrow">NEXT STEP</div><h2>Have a project in mind?<br><span>Let's make it real.</span></h2><p>Replace this sample contact section with your professional email or portfolio links.</p></div><a class="button button-light" href="mailto:hello@example.com">Get in touch <span>↗</span></a></div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><a class="brand" href="#home"><span class="brand-mark">C</span> CloudLaunch</a><p>© <span id="year"></span> CloudLaunch. Built for the cloud.</p><a href="#home">Back to top ↑</a></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>

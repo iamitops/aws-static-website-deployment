@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "No dependencies required for this static website."
+  build:
+    commands:
+      - echo "Validating website files..."
+      - test -f index.html
+      - test -f styles.css
+      - test -f script.js
+      - echo "Website validation completed."
+
+artifacts:
+  files:
+    - '**/*'
+  discard-paths: no
